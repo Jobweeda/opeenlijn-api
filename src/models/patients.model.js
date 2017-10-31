@@ -10,7 +10,8 @@ module.exports = function (app) {
     firstName: { type: String, required: true },
     lastName: { type: String, required: true },
     email: { type: String },
-    appointments: { type: [Date] },
+    phoneNumber: { type: String },
+    appointmentIds: { type: [Date] },
     createdAt: { type: Date, default: Date.now },
     updatedAt: { type: Date, default: Date.now }
   });
