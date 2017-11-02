@@ -11,7 +11,7 @@ module.exports = function (app) {
     lastName: { type: String, required: true },
     email: { type: String },
     phoneNumber: { type: String },
-    appointmentIds: { type: [Date], required: true },
+    appointmentIds: { type: [Date] },
     createdAt: { type: Date, default: Date.now },
     updatedAt: { type: Date, default: Date.now }
   });
