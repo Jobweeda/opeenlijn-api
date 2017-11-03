@@ -1,4 +1,5 @@
 
+const updatePatients = require('../../hooks/update-patients');
 
 module.exports = {
   before: {
@@ -6,8 +7,8 @@ module.exports = {
     find: [],
     get: [],
     create: [],
-    update: [],
-    patch: [],
+    update: [updatePatients()],
+    patch: [updatePatients()],
     remove: []
   },
 
